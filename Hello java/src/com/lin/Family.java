@@ -6,7 +6,7 @@ public class Family {
 	private float weight;
 	private float height;
 
-	public Family(String name, int age) {
+	public Family(String name, int age, float weight, float height) {
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
@@ -18,15 +18,15 @@ public class Family {
 		System.out.print(name + "\t" + age + "\t" + weight + "\t" + height);
 	}
 
-	public void setWeight() {
+	public void setWeight(float weight) {
 		if (weight >= 0) {
 			this.weight = weight;
 		}
 
 	}
 
-	public void setHeight() {
-		if(height>=0) {
+	public void setHeight(float height) {
+		if (height >= 0) {
 			this.height = height;
 		}
 
